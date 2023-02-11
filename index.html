@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Index.css">
+    <style>
+      model-viewer{
+          width: 50vh;
+          height:40vh;
+          margin: 0 auto;
+      }
+  </style>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <ul>
+            <li><a href="#sec2">About</a></li> 
+            <li><a href="#sec3">Qualification</a></li> 
+            <li><a href="#sec4">Contacts</a></li>
+        </ul>
+        
+
+    </header>
+    <section id="sec1">
+        <img src="background.jpg" id=stars>
+        <img src="earth back.png"id=earth><br>
+        <h2 id="intro">Hello I'm Anurag</h2>
+        <a href="#sec2" id="button">HI!</a>
+        <img src="back astro only.png"id=astro>
+    </section>
+    <script>
+        let stars = document.getElementById('stars');
+        let earth = document.getElementById('earth');
+        let astro = document.getElementById('astro');
+        let button = document.getElementById('button');
+        let intro = document.getElementById('intro');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            earth.style.top = value * 1.05 + 'px';
+            stars.style.top = value * -0.7 + 'px';
+            button.style.left = value * 1.05 + 'px';
+            intro.style.left = value * 1.05 + 'px';
+        })
+    </script>
+</body>
+<section id="sec2">
+  
+  <div id = "intro2"><h1>HI i am ANURAG</h1>
+    <br><p>i am a student of herald collage kathmandu.</p></div>
+    <div id="hobbytext"><h1>Hobby's</h1></div>
+  <div id="hobbyimg">
+<img src="image-removebg-preview.png">
+</div>
+  <div id = "intro3">
+    <div id="buttons">
+      <a href="#hobby1">cooking</a><br><br>
+      <a href="#hobby2">3d Modeling</a><br><br>
+      <a href="#hobby3">Video Editing</a>
+    </div>
+    <div class="hobby">
+    <img id="hobby1" src="http://sova.pitt.edu/wp-content/uploads/2020/03/annie-spratt-XiWtCLWK5K8-unsplash-scaled.jpg">
+    <h1 >Cooking</h1><br>
+    <h2>I Like to cook in my free time and like to indulge myself in many recipes as well as beleive that if ur to eat something maight as well make it the best way you can.</h2>
+    
+  </div>
+  <div class="hobbys">
+    <div id="kamgaryarr">
+    <model-viewer id="hobby2" src="well.glb" camera-controls auto-rotate
+    ar camera-controls enable-pan touch-action="none"
+    camera-orbit="0deg 75deg 25m" field-of-view="45deg"
+    min-field-of-view="25deg" max-field-of-view="45deg" interpolation-decay="200"
+    min-camera-orbit='auto 75deg auto' max-camera-orbit= 'auto 75deg auto' ar
+    ar-modes="webxr scene-viewer quick-look">
+  </div>
+    <div id = "kamgar"><h1 >3d modeling</h1><br>
+      <h2>Another one of my hobbys is to make 3d model mainly through the help of blender as shown abhove i have made many models and diffrent renders in my free time</h1></div>
+    
+  </div>
+  <div class="hobbyss">
+    <video id="hobby2" width="650" height="340" controls>
+      <source src="Untitled.mp4" type="video/mp4">
+      
+    Your browser does not support the video tag.
+    </video>
+    <h1 id="hobby3">Editing</h1>
+    <h2>I also eidt many videos and the one shown abhove is the one i have recently worked on</h2>
+  </div>
+  </div>
+
+</section>
+<section id="sec3">
+
+<div id="qualifications">
+  <img src="cv.png">
+</div>
+<img src="grad.png">
+</section>
+<div id="dropper">
+  <div id="refrence">
+    <a href="">Refrences</a>
+    </div>
+  <div id="refrence1">
+    <a href="">Facebook</a>
+  </div>
+  <div id="refrence2">
+    <a href="">Instagram</a> 
+  </div>
+<div id="arrow">></div>
+</div>
+<section id="sec4">
+  <div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<h2>Contact Us</h2>
+				<input type="text" class="field" placeholder="Your Name">
+				<input type="text" class="field" placeholder="Your Email">
+				<input type="text" class="field" placeholder="Phone">
+				<textarea placeholder="Message" class="field"></textarea>
+				<button class="btn">Send</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>Contact me for more info</footer>
+
+</html>
