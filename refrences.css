@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(54, 9, 9);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-left: -70px;
+}
+body #one h1{
+    position: absolute;
+    font-size: 200px;
+    font-family: sans-serif;
+    border: 30;
+    margin-left: 20%;
+    color: antiquewhite;
+}
+#first{
+padding-top: 40vh;
+}
+#second{
+    padding-top: 40vh;
+}
+#third{
+    padding-top: 40vh;
+}
+#first img{
+width: 40vh;
+height:40vh;
+}
+#second img{
+    width: 40vh;
+    height:40vh;
+}
+#third img{
+    width: 40vh;
+height:40vh;
+}
